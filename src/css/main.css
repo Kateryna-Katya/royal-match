@@ -1,0 +1,122 @@
+/* hero */
+.hero-title{
+  font-family: "Rubik One", sans-serif;
+font-weight: 400;
+font-size: 32px;
+color: #fff;
+margin-top: 128px;
+}
+.blue{
+  font-size: 22px;
+  color: #3289cb;
+}
+.purpule{
+  font-size: 22px;
+  color: #df7ffb;
+}
+.span-pink{
+  font-size: 22px;
+}
+.hero-text{
+  font-family: "Manrope", sans-serif;
+font-weight: 400;
+font-size: 16px;
+color: #fff;
+margin-top: 16px;
+}
+@media only screen and (min-width: 1439px) {
+  .hero-img{
+    margin-right: 0;
+    margin-left: auto;}
+  .hero-title{
+  font-size: 52px;
+  margin-top: -320px;
+width: 496px;}
+  .blue{
+    font-size: 42px;}
+  .purpule{
+    font-size: 42px;}
+  .span-one{
+    font-size: 42px;}
+  .hero-text{
+    font-size: 20px;
+    width: 496px;}
+  }
+  /* about */
+.about-title{
+  margin-bottom: 24px;
+}
+.about-text{
+margin-bottom: 40px;
+}
+.about-span{
+font-weight: 600;
+}
+.about-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.about-img{
+  width: 40px;
+  height: 40px;
+  margin-bottom: 8px;
+}
+.tell-img{
+  margin-top: 20px;
+}
+@media only screen and (min-width: 1439px) {
+  .about-title{
+    margin-top: 259px;
+    margin-left: 500px;
+  }
+  .about-text{
+     margin-left: 500px;
+    }
+    .about-list{
+      width: 704px;
+      margin-left: 500px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+    .about-item{
+      width: 288px;
+      height: 96px;
+    }
+    .tell-img{
+      margin-top: -650px;
+    }
+}
+/* How to Play */
+.play-title{
+  font-family: "Rubik One", sans-serif;
+font-weight: 400;
+font-size: 32px;
+color: #fff;
+margin-top: 120px;
+}
+.play-list{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 12px 12px 20px 0 rgba(0, 0, 0, 0.1);
+background: linear-gradient(316deg, #9b0031 0%, #200064 100%);
+}
+.play-item-name{
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157%;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--wight);
+}
+.play-item-text{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  text-align: center;
+  color: var(--wight);
+}
