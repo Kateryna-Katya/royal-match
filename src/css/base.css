@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Rubik One';
+  src: url('/fonts/RubikOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 .background{
   background-image: url("/img/back/back-mob.png");
   background-repeat: no-repeat;
