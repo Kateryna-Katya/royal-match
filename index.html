@@ -16,20 +16,71 @@
     <link rel="icon" type="image/svg+xml" href="/royal-match/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
     <title>Royal Match 3</title>
     <script type="module" crossorigin src="/royal-match/index.js"></script>
     <link rel="modulepreload" crossorigin href="/royal-match/assets/vendor-C8mLK4Kr.js">
     <link rel="stylesheet" crossorigin href="/royal-match/assets/vendor-DHBATib1.css">
-    <link rel="stylesheet" crossorigin href="/royal-match/assets/styles-CpBmiCd5.css">
+    <link rel="stylesheet" crossorigin href="/royal-match/assets/styles-DsSIWZL_.css">
   </head>
   <body class="background">
-    <header class="header">
-  <div class="container">
-   
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <a class="header-link" href="index.html#Home">
+      <img class="header-logo" src="/royal-match/assets/logo-unVT0U5E.png" alt="Logo" loading="lazy" width="40" height="40" />
+    </a>
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+        <svg class="header-svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 30V26.6667H35V30H5ZM5 21.6667V18.3333H35V21.6667H5ZM5 13.3333V10H35V13.3333H5Z" fill="white" />
+        </svg>
+      </span>
+    </button>
+
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="index.html#About">about the game</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Play">how to play</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Game">Game features</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Main">main characters</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Gallery">Gallery</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Reviews">Reviews</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#FAQ">FAQ</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
-
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li><a class="menu-list-item" href="index.html#About">about the game</a></li>
+    <li><a class="menu-list-item" href="index.html#Play">how to play</a></li>
+    <li>
+      <a class="menu-list-item" href="index.html#Game">Game features</a>
+    </li>
+    <li><a class="menu-list-item" href="index.html#Main">main characters</a></li>
+    <li><a class="menu-list-item" href="index.html#Gallery">Gallery</a></li>
+    <li><a class="menu-list-item" href="index.html#Reviews">Reviews</a></li>
+    <li><a class="menu-list-item" href="index.html#FAQ">FAQ</a></li>
+  </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
@@ -46,7 +97,7 @@
   </div>
  </section>
  <!-- about -->
-  <section class="about-section">
+  <section class="about-section" id="About">
     <div class="container">
       <h2 class="about-title">About the <span class="span-one">Game</span> </h2>
       <p class="about-text">
@@ -94,7 +145,7 @@ Solve puzzles to collect resources and renovate the castle
     </div>
   </section>
   <!-- How to Play -->
-   <section class="play-section">
+   <section class="play-section" id="Play">
     <div class="container">
       <h2 class="play-title">
         How to <span class="span-one">Play</span>
@@ -150,7 +201,7 @@ Solve puzzles to collect resources and renovate the castle
     </div>
    </section>
    <!-- Game Features  -->
-    <section class="features-section">
+    <section class="features-section" id="Game">
       <div class="container">
         <h2 class="features-title">Game <span class="span-one">Features</span></h2>
         <div class="features-container">
@@ -194,7 +245,7 @@ Solve puzzles to collect resources and renovate the castle
       </div>
     </section>
     <!--  Main Characters -->
-<section class="characters-section">
+<section class="characters-section" id="Main">
   <div class="container">
     <h2 class="characters-title">Main <span class="span-one">Characters</span></h2>
     <ul class="characters-list">
@@ -222,7 +273,7 @@ Solve puzzles to collect resources and renovate the castle
   </div>
 </section>
 <!-- Game Atmosphere  -->
- <section class="atmosphere-section">
+ <section class="atmosphere-section" id="Gallery">
   <div class="container">
     <h2 class="atmosphere-title">Game <span class="span-one">Atmosphere</span></h2>
     <p class="atmosphere-text">Immerse yourself in a magical kingdom where sparkling jewels, cozy fireplaces, and golden chandeliers await you.<br/><span class="atmosphere-span">Royal
@@ -268,14 +319,127 @@ Solve puzzles to collect resources and renovate the castle
       </div>
   </div>
  </section>
+<!-- Reviews -->
+ <section class="reviews-section" id="Reviews">
+  <div class="container">
+<h2 class="reviews-title">Reviews</h2>
+<div class="swiper reviews-swiper">
+  <div class="swiper-wrapper reviews-swiper-wrapper">
+    <div class="swiper-slide reviews-swiper-slide">
+      <img class="reviews-img" src="/royal-match/assets/one-B9zN2oew.png" alt=" Anna G." width="80" height="80" loading="lazy">
+      <p class="author-name">Anna G.</p>
+      <img  class="stars-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAAAxCAYAAAALI0+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQoSURBVHgB7ZxNUtswGIZf0Q27wg3MCQonaLLpQNmUE5CeoHAC0hOU3oCegG4oM90AJ2hvgG/QdNV2po37yQmBEP9IimQpw/vMeOw4jvQYRrL0STJACCGEEEIIIYSQIBSXyPSGFYX+caF/O2sIiMgPZXert+nxSkH/uNDfDIVATGuf2/sTGOEPttSB7FcA+seF/uaEfBL35j4pbGAd77A69OY+0b9renOf6F9LyEJ8snCmwBFWB/rHhf6GBCnE0pToyS5b+EJqo+l3SUP/uNDfjlBP4sOG706QPvSPC/0t8B7YWujQV/Ebm6kGKOgfF/rbE+JJfNh6RdoBCvrHhf6WhCjEg9Yr0g5QDFqvoH9IBq1X0H8Or4VYmhIDwGB2SqIBCvrHhf5u+H4Stzcl7kkxQEH/uNDfAavAVnFeDlhvYCybkhpHlfvn0jzYwKQGGsCOM9lySWMkafwsjyfk0vkf+Q5e0H+BM9DfmFT9awtx8RXb+Cu1hZL9hAxxGE23XP54x2of301+RH9v0H9Chji0+tcX4ssyTJ4hJSzmn9I/APSPS41/ZZ+4uJo1D9JClV6t0D8Q9I9LjX9lIVZ9KekKp0iNAqcmtSj9A0H/uNT410an1S6OZTdEOgzV69LJCPp7h/5xqfVvjU4XX2RgWuED4qEjd0dyA5/gAP2Xhv6J+xsNMZWRun84R/f9hBzPcKBemUUU66C/M/RH+v7G48TTid1X6O5Gctn6am82drYU9LcmB/1npOxvPGOrTGwdO1LsPyM81zLYvePrH6ChvxX0f0TK/lYztu6QWklPGRsiBDoCZxGAcMqC/g2J0781i8T8nQpxmVeIG1HSgd/FR3QA/SugvzEp+TsXYo3cyA/ZGQ2gtyeGkdRAm+gQ+j9MjP7WWSbi77yKabqUys8NaDpeXkb/R9DfipT83ZciKryAb0Kk2WVe9I+b1xP1dy/EBd7ANyHS7DIv+sfN64n6L/NSgG34pgiQZj30fwz9bUjG36kQFxdlZv76A3fofsFF+H8E/WugvxGp+bs9iZ/hJUIRMu0u8qB/3DyeoL9bIR4bR9H0kq4jaSbowevc6BfjDiKM9PeRtjv095H2DLdCrAwymkxP29GD1zL+dSrHfUzeKdRGD6GhfxM9hIb+TfRgifVkj7LNvoZvDZfkUvMMRPym8veT13rq2S5ZbQpjufn95Vae1EF/+i9Div72T+LmNvuwnLhdcwMatYcz2bbQNGUtXp+D/u15LAf9vfu7NKezinPXkrFedfHe+DWbcq3stqQtsFjjjIMu98oqztH/IfRvIqs4F9XfvhCvlW8YuBMtO+4i1HdZeK2XWkmfYUcO3+K+46/TDDeJnf4z6O9Agv6uSxGzcorYL9z4ekF3iDS7zIv+cfOiPyGEEEIIIYQQQgghhBBCCCHG/AcFHHLSg9X7LQAAAABJRU5ErkJggg==" alt="Five-stars" width="120" height="24" loading="lazy">
+      <p class="reviews-text">"A charming match-3 game with a beautiful castle restoration theme. I'm obsessed!"</p>
+    </div>
+    <div class="swiper-slide reviews-swiper-slide">
+      <img class="reviews-img" src="/royal-match/assets/two-FNg0GgAH.png" alt="Brandon T." width="80" height="80" loading="lazy">
+      <p class="author-name">Brandon T.</p>
+      <img class="stars-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAAAxCAYAAAALI0+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQoSURBVHgB7ZxNUtswGIZf0Q27wg3MCQonaLLpQNmUE5CeoHAC0hOU3oCegG4oM90AJ2hvgG/QdNV2po37yQmBEP9IimQpw/vMeOw4jvQYRrL0STJACCGEEEIIIYSQIBSXyPSGFYX+caF/O2sIiMgPZXert+nxSkH/uNDfDIVATGuf2/sTGOEPttSB7FcA+seF/uaEfBL35j4pbGAd77A69OY+0b9renOf6F9LyEJ8snCmwBFWB/rHhf6GBCnE0pToyS5b+EJqo+l3SUP/uNDfjlBP4sOG706QPvSPC/0t8B7YWujQV/Ebm6kGKOgfF/rbE+JJfNh6RdoBCvrHhf6WhCjEg9Yr0g5QDFqvoH9IBq1X0H8Or4VYmhIDwGB2SqIBCvrHhf5u+H4Stzcl7kkxQEH/uNDfAavAVnFeDlhvYCybkhpHlfvn0jzYwKQGGsCOM9lySWMkafwsjyfk0vkf+Q5e0H+BM9DfmFT9awtx8RXb+Cu1hZL9hAxxGE23XP54x2of301+RH9v0H9Chji0+tcX4ssyTJ4hJSzmn9I/APSPS41/ZZ+4uJo1D9JClV6t0D8Q9I9LjX9lIVZ9KekKp0iNAqcmtSj9A0H/uNT410an1S6OZTdEOgzV69LJCPp7h/5xqfVvjU4XX2RgWuED4qEjd0dyA5/gAP2Xhv6J+xsNMZWRun84R/f9hBzPcKBemUUU66C/M/RH+v7G48TTid1X6O5Gctn6am82drYU9LcmB/1npOxvPGOrTGwdO1LsPyM81zLYvePrH6ChvxX0f0TK/lYztu6QWklPGRsiBDoCZxGAcMqC/g2J0781i8T8nQpxmVeIG1HSgd/FR3QA/SugvzEp+TsXYo3cyA/ZGQ2gtyeGkdRAm+gQ+j9MjP7WWSbi77yKabqUys8NaDpeXkb/R9DfipT83ZciKryAb0Kk2WVe9I+b1xP1dy/EBd7ANyHS7DIv+sfN64n6L/NSgG34pgiQZj30fwz9bUjG36kQFxdlZv76A3fofsFF+H8E/WugvxGp+bs9iZ/hJUIRMu0u8qB/3DyeoL9bIR4bR9H0kq4jaSbowevc6BfjDiKM9PeRtjv095H2DLdCrAwymkxP29GD1zL+dSrHfUzeKdRGD6GhfxM9hIb+TfRgifVkj7LNvoZvDZfkUvMMRPym8veT13rq2S5ZbQpjufn95Vae1EF/+i9Div72T+LmNvuwnLhdcwMatYcz2bbQNGUtXp+D/u15LAf9vfu7NKezinPXkrFedfHe+DWbcq3stqQtsFjjjIMu98oqztH/IfRvIqs4F9XfvhCvlW8YuBMtO+4i1HdZeK2XWkmfYUcO3+K+46/TDDeJnf4z6O9Agv6uSxGzcorYL9z4ekF3iDS7zIv+cfOiPyGEEEIIIYQQQgghhBBCCCHG/AcFHHLSg9X7LQAAAABJRU5ErkJggg==" alt="Five-stars" width="120" height="24" loading="lazy">
+      <p class="reviews-text">"The puzzles are fun and just challenging enough to keep me hooked!"</p>
+    </div>
+    <div class="swiper-slide reviews-swiper-slide">
+      <img class="reviews-img" src="/royal-match/assets/three-Bmt-Q6_w.png" alt="Claire V." width="80" height="80" loading="lazy">
+      <p class="author-name">Claire V.</p>
+      <img class="stars-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAAAxCAYAAAALI0+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQoSURBVHgB7ZxNUtswGIZf0Q27wg3MCQonaLLpQNmUE5CeoHAC0hOU3oCegG4oM90AJ2hvgG/QdNV2po37yQmBEP9IimQpw/vMeOw4jvQYRrL0STJACCGEEEIIIYSQIBSXyPSGFYX+caF/O2sIiMgPZXert+nxSkH/uNDfDIVATGuf2/sTGOEPttSB7FcA+seF/uaEfBL35j4pbGAd77A69OY+0b9renOf6F9LyEJ8snCmwBFWB/rHhf6GBCnE0pToyS5b+EJqo+l3SUP/uNDfjlBP4sOG706QPvSPC/0t8B7YWujQV/Ebm6kGKOgfF/rbE+JJfNh6RdoBCvrHhf6WhCjEg9Yr0g5QDFqvoH9IBq1X0H8Or4VYmhIDwGB2SqIBCvrHhf5u+H4Stzcl7kkxQEH/uNDfAavAVnFeDlhvYCybkhpHlfvn0jzYwKQGGsCOM9lySWMkafwsjyfk0vkf+Q5e0H+BM9DfmFT9awtx8RXb+Cu1hZL9hAxxGE23XP54x2of301+RH9v0H9Chji0+tcX4ssyTJ4hJSzmn9I/APSPS41/ZZ+4uJo1D9JClV6t0D8Q9I9LjX9lIVZ9KekKp0iNAqcmtSj9A0H/uNT410an1S6OZTdEOgzV69LJCPp7h/5xqfVvjU4XX2RgWuED4qEjd0dyA5/gAP2Xhv6J+xsNMZWRun84R/f9hBzPcKBemUUU66C/M/RH+v7G48TTid1X6O5Gctn6am82drYU9LcmB/1npOxvPGOrTGwdO1LsPyM81zLYvePrH6ChvxX0f0TK/lYztu6QWklPGRsiBDoCZxGAcMqC/g2J0781i8T8nQpxmVeIG1HSgd/FR3QA/SugvzEp+TsXYo3cyA/ZGQ2gtyeGkdRAm+gQ+j9MjP7WWSbi77yKabqUys8NaDpeXkb/R9DfipT83ZciKryAb0Kk2WVe9I+b1xP1dy/EBd7ANyHS7DIv+sfN64n6L/NSgG34pgiQZj30fwz9bUjG36kQFxdlZv76A3fofsFF+H8E/WugvxGp+bs9iZ/hJUIRMu0u8qB/3DyeoL9bIR4bR9H0kq4jaSbowevc6BfjDiKM9PeRtjv095H2DLdCrAwymkxP29GD1zL+dSrHfUzeKdRGD6GhfxM9hIb+TfRgifVkj7LNvoZvDZfkUvMMRPym8veT13rq2S5ZbQpjufn95Vae1EF/+i9Div72T+LmNvuwnLhdcwMatYcz2bbQNGUtXp+D/u15LAf9vfu7NKezinPXkrFedfHe+DWbcq3stqQtsFjjjIMu98oqztH/IfRvIqs4F9XfvhCvlW8YuBMtO+4i1HdZeK2XWkmfYUcO3+K+46/TDDeJnf4z6O9Agv6uSxGzcorYL9z4ekF3iDS7zIv+cfOiPyGEEEIIIYQQQgghhBBCCCHG/AcFHHLSg9X7LQAAAABJRU5ErkJggg==" alt="Five-stars" width="120" height="24" loading="lazy">
+      <p class="reviews-text">"Love the way each room comes to life. Great graphics and relaxing gameplay."</p>
+    </div>
+    <div class="swiper-slide reviews-swiper-slide">
+      <img class="reviews-img" src="/royal-match/assets/four-BgPRorjy.png" alt="Oliver D." width="80" height="80" loading="lazy">
+      <p class="author-name">Oliver D.</p>
+      <img class="stars-img" src="data:image/png;base64,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" alt="Five-stars" width="120" height="24" loading="lazy">
+      <p class="reviews-text">"Reminds me of classic match games but with so much more polish and personality."</p>
+    </div>
+    <div class="swiper-slide reviews-swiper-slide">
+      <img class="reviews-img" src="/royal-match/assets/five-BpB2lEOX.png" alt="Nina S." width="80" height="80" loading="lazy">
+      <p class="author-name">Nina S.</p>
+      <img class="stars-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAAAxCAYAAAALI0+9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAQoSURBVHgB7ZxNUtswGIZf0Q27wg3MCQonaLLpQNmUE5CeoHAC0hOU3oCegG4oM90AJ2hvgG/QdNV2po37yQmBEP9IimQpw/vMeOw4jvQYRrL0STJACCGEEEIIIYSQIBSXyPSGFYX+caF/O2sIiMgPZXert+nxSkH/uNDfDIVATGuf2/sTGOEPttSB7FcA+seF/uaEfBL35j4pbGAd77A69OY+0b9renOf6F9LyEJ8snCmwBFWB/rHhf6GBCnE0pToyS5b+EJqo+l3SUP/uNDfjlBP4sOG706QPvSPC/0t8B7YWujQV/Ebm6kGKOgfF/rbE+JJfNh6RdoBCvrHhf6WhCjEg9Yr0g5QDFqvoH9IBq1X0H8Or4VYmhIDwGB2SqIBCvrHhf5u+H4Stzcl7kkxQEH/uNDfAavAVnFeDlhvYCybkhpHlfvn0jzYwKQGGsCOM9lySWMkafwsjyfk0vkf+Q5e0H+BM9DfmFT9awtx8RXb+Cu1hZL9hAxxGE23XP54x2of301+RH9v0H9Chji0+tcX4ssyTJ4hJSzmn9I/APSPS41/ZZ+4uJo1D9JClV6t0D8Q9I9LjX9lIVZ9KekKp0iNAqcmtSj9A0H/uNT410an1S6OZTdEOgzV69LJCPp7h/5xqfVvjU4XX2RgWuED4qEjd0dyA5/gAP2Xhv6J+xsNMZWRun84R/f9hBzPcKBemUUU66C/M/RH+v7G48TTid1X6O5Gctn6am82drYU9LcmB/1npOxvPGOrTGwdO1LsPyM81zLYvePrH6ChvxX0f0TK/lYztu6QWklPGRsiBDoCZxGAcMqC/g2J0781i8T8nQpxmVeIG1HSgd/FR3QA/SugvzEp+TsXYo3cyA/ZGQ2gtyeGkdRAm+gQ+j9MjP7WWSbi77yKabqUys8NaDpeXkb/R9DfipT83ZciKryAb0Kk2WVe9I+b1xP1dy/EBd7ANyHS7DIv+sfN64n6L/NSgG34pgiQZj30fwz9bUjG36kQFxdlZv76A3fofsFF+H8E/WugvxGp+bs9iZ/hJUIRMu0u8qB/3DyeoL9bIR4bR9H0kq4jaSbowevc6BfjDiKM9PeRtjv095H2DLdCrAwymkxP29GD1zL+dSrHfUzeKdRGD6GhfxM9hIb+TfRgifVkj7LNvoZvDZfkUvMMRPym8veT13rq2S5ZbQpjufn95Vae1EF/+i9Div72T+LmNvuwnLhdcwMatYcz2bbQNGUtXp+D/u15LAf9vfu7NKezinPXkrFedfHe+DWbcq3stqQtsFjjjIMu98oqztH/IfRvIqs4F9XfvhCvlW8YuBMtO+4i1HdZeK2XWkmfYUcO3+K+46/TDDeJnf4z6O9Agv6uSxGzcorYL9z4ekF3iDS7zIv+cfOiPyGEEEIIIYQQQgghhBBCCCHG/AcFHHLSg9X7LQAAAABJRU5ErkJggg==" alt="Five-stars" width="120" height="24" loading="lazy">
+      <p class="reviews-text">"The characters and castle upgrades make this more than just another puzzle game."</p>
+    </div>
+  </div>
+ </section>
+<!--  FAQ -->
+  <section class="faq-section" id="FAQ">
+    <div class="container">
+      <h2 class="faq-title">FAQ</h2>
+      <ul class="faq-acc">
+        <li class="faq-acc-el faq-current">
+          <h3 class="faq-acc-el-title">
+            <button type="button" class="faq-acc-el-trigger">
+              Is Royal Match 3 free to play?
+            </button>
+          </h3>
+          <p class="faq-acc-el-descr-frame">Yes! It’s free to download and play, with optional in-game purchases.</p>
+        </li>
+        <li class="faq-acc-el faq-current">
+          <h3 class="faq-acc-el-title">
+            <button type="button" class="faq-acc-el-trigger">
+              Can I play without internet?
+            </button>
+          </h3>
+          <p class="faq-acc-el-descr-frame">Yes, you can enjoy the game offline, though online access is needed for events and updates.</p>
+        </li>
+        <li class="faq-acc-el faq-current">
+          <h3 class="faq-acc-el-title">
+            <button type="button" class="faq-acc-el-trigger">
+              How do I earn stars?
+            </button>
+          </h3>
+          <p class="faq-acc-el-descr-frame">You earn stars by completing puzzle levels. Use them to renovate and unlock castle areas.</p>
+        </li>
+        <li class="faq-acc-el faq-current">
+          <h3 class="faq-acc-el-title">
+            <button type="button" class="faq-acc-el-trigger">
+              Are there more rooms added in future updates?
+            </button>
+          </h3>
+          <p class="faq-acc-el-descr-frame">Absolutely! We’re constantly expanding the kingdom with new rooms and content.</p>
+        </li>
+        <li class="faq-acc-el faq-current">
+          <h3 class="faq-acc-el-title">
+            <button type="button" class="faq-acc-el-trigger">
+              What happens if I run out of lives?
+            </button>
+          </h3>
+          <p class="faq-acc-el-descr-frame">You can wait for lives to regenerate or watch optional ads to gain extra attempts.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+<!-- Join the Royal Puzzle Adventure Today! -->
+ <section class="royal-section">
+  <div class="container royal-container"> 
+<h2 class="royal-title">Join the Royal Puzzle Adventure Today!</h2>
+<p class="royal-text">Download Royal Match 3 and Restore the Magic of the Castle!</p>
+  </div>
+ </section>
     </main>
 
     <footer class="footer">
-  <div class="container">
-   
+  <div class="container footer-container">
+    <ul class="footer-navigation">
+      <li class="footer-link">
+        <a class="footer-underline" href="Privacy Policy.html">Privacy Policy</a>
+      </li>
+      <li class="footer-link">
+        <a class="footer-underline" href="Terms and Conditions.html">Terms and Conditions</a>
+      </li>
+
+      <li class="footer-link">
+        <a class="footer-underline" href="Cookies Policy.html">Cookies Policy</a>
+      </li>
+    </ul>
+    <p class="footer-text">© 2025 sparkleroyalmatch.com — All rights reserved.</p>
   </div>
 </footer>
-
+    <div id="cookie-popup" class="cookie-popup">
+    <div class="popup-wrapper">
+        <p class="cookie-class">We use cookies to improve your experience on our website. By browsing this website, you agree to our use of cookies.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="btn-accept">ACCEPT COOKIES</button>
+            <button id="decline-cookies" class="btn-decline">DECLINE COOKIES</button>
+        </div>
+    </div>
+</div>
 
   </body>
 </html>
