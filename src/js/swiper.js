@@ -1,9 +1,35 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 
-
 document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.atmosphere-swiper', {
+    let reviewsSwiper = null;
+
+    function initReviewsSwiper() {
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth >= 1439 && !reviewsSwiper) {
+            reviewsSwiper = new Swiper('.reviews-swiper', {
+                slidesPerView: 3,
+                spaceBetween: 24,
+                loop: true,
+                slideClass: 'reviews-swiper-slide',
+                wrapperClass: 'reviews-swiper-wrapper',
+                direction: 'horizontal',
+            });
+        } else if (screenWidth < 1439 && reviewsSwiper) {
+            reviewsSwiper.destroy(true, true);
+            reviewsSwiper = null;
+        }
+    }
+
+    // Виклик при завантаженні
+    initReviewsSwiper();
+
+    // Слухай resize
+    window.addEventListener('resize', initReviewsSwiper);
+
+    // Gallery Swiper – постійно активний
+    new Swiper('.atmosphere-swiper', {
         breakpoints: {
             374: {
                 slidesPerView: 1.5,
@@ -20,26 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
         loop: true,
         slideClass: 'atmosphere-swiper-slide',
         wrapperClass: 'atmosphere-swiper-wrapper',
-        direction: 'horizontal',
-    });
-
-    new Swiper('.section-swiper-second', {
-        breakpoints: {
-            374: {
-                slidesPerView: "auto",
-                spaceBetween: 10,
-                centeredSlides: false,
-            },
-            1439: {
-                slidesPerView: "auto",
-                spaceBetween: 20,
-                centeredSlides: false,
-            },
-        },
-
-        loop: true,
-        slideClass: 'section-swiper-slide',
-        wrapperClass: 'section-swiper-wrapper',
         direction: 'horizontal',
     });
 });

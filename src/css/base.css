@@ -10,7 +10,8 @@
   background-image: url("/img/back/back-mob.png");
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
+  background-size: 100% 9800px;
+ 
 }
 body{
   font-family: "Manrope", sans-serif;
@@ -33,7 +34,7 @@ color: #f9c1cf;
     background-image: url("/img/back/back-desk.png");
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
+    background-size: 100% 6700px;
   }
   body{
   font-size: 16px;
